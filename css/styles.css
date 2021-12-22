@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #191919;
+}
+h1{
+    font-size:36px;
+    font-weight:400;
+}
+h3{
+    font-size:18px;
+}
+p{
+    font-size:16px;
+    line-height:26px;
+    margin-bottom:0px;
+}
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:65px 0;
+}
+header{
+    position:relative;
+    display:flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+}
+.header_bg{
+    width:100%;
+    height:100vh;
+    background:url('../img/header_bg.jpg') center center no-repeat;
+    background-size:cover;
+    filter:blur(10px);
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.header_welcome{
+    position: absolute;
+    filter:none;
+    color:#fff;
+    text-align:center;
+    width:300px;
+    margin-top: calc(-100vw + 90%);
+    text-shadow:none;
+    opacity:1;
+    cursor:default;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.header_bg:hover{
+    filter:blur(0px);
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.header_bg:hover ~ .header_welcome{
+    filter:blur(5px);
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+.header_welcome img{
+    width:100%;
+    max-width:180px;
+}
+.three_points{
+    background:#191919;
+    color:#fff;
+}
+.three_points ul{
+    list-style-type:none;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+.three_points ul li{
+    max-width:33.3%;
+}
+.three_points .fab{
+    font-size:48px;
+}
+.two_points{
+    background:#fff;
+}
+.two_points .fas{
+    width: 50%;
+    text-align: center;
+    color:#333;
+}
+.two_points_text{
+width:50%;
+}
+
+footer{
+    background:#333;
+    padding:36px;
+    text-align:center;
+    color:#fff
+}
